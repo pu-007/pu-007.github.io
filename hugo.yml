@@ -27,7 +27,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: pu's blog
   description: "This is my blog"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, PaperMod, pu]
   author: pu
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -36,7 +36,7 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -48,17 +48,17 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  showtoc: true
+  tocopen: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "https://pu-007.github.io/favicon.ico"
+    favicon16x16: "https://pu-007.github.io/favicon.ico"
+    favicon32x32: "https://pu-007.github.io/favicon.ico"
+    apple_touch_icon: "https://pu-007.github.io/favicon.ico"
+    safari_pinned_tab: "https://pu-007.github.io/favicon.ico"
 
   label:
     text: "pu's blog"
@@ -71,8 +71,8 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/pu-007/pu-007.github.io/tree/main/"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/pu-007/pu-007.github.io/blob/main/content/posts/"
+    Text: "在线编辑" # edit text
     appendFilePath: true # to append file path to Edit link
 
 menu:
@@ -89,10 +89,14 @@ menu:
       name: 🕰️
       url: /archives/
       weight: 30
+    - indentifer: about
+      name: 🙋
+      url: /about/
+      weight: 40
     - indentifer: search
       name: 🔍
       url: /search/
-      weight: 40
+      weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
