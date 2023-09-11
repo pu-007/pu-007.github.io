@@ -7,6 +7,6 @@ tags: [ ]
 summary: ""
 ---
 
-slide download link:
-    + [github(cdn)](https://cdn.jsdelivr.net/gh/pu-007/pu-007.github.io/files/learning-report-slides.pptx)
-    + airportal
+## slide download link
++ [github with ghproxy](https://ghproxy.com/https://raw.githubusercontent.com/pu-007/pu-007.github.io/main/static/files/learning-report-slides.pptx)
++ airportal
